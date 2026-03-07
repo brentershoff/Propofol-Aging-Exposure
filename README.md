@@ -63,6 +63,16 @@ Reconstructs modeled propofol effect-site concentration trajectories from the cl
 - repeats the workflow using the Schnider model as a sensitivity analysis
 - exports model-specific analytic datasets for downstream regression, figure generation, and manuscript analysis
 
+## Repository structure
+
+This repository is organized to mirror the major stages of the analysis:
+
+1. dataset extraction and assembly from the perioperative SQL warehouse
+2. pharmacokinetic simulation of propofol effect-site concentration trajectories
+3. primary Eleveld-based regression and figure generation
+4. sensitivity analyses using alternate PK models and alternate cohort specifications
+5. generation of manuscript figures and tables
+
 ## Planned workflow
 
 Additional notebooks in this repository will include:
