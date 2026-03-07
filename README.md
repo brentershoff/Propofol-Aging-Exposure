@@ -38,7 +38,7 @@ Creates the analysis-ready propofol induction dataset from the perioperative SQL
 - merges patient-level summary variables back into the long medication-event dataset
 - exports the analysis-ready CSV used in downstream modeling
 
-  ### 02_generate_table1_age_stratified.ipynb
+### 02_generate_table1_age_stratified.ipynb
 
 Generates the manuscript Table 1 age-stratified baseline summary table. This notebook:
 
