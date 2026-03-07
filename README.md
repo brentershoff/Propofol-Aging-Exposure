@@ -76,6 +76,17 @@ Performs the primary regression and figure-generation workflow using the patient
 - fits logistic models for overexposure probability analyses
 - generates manuscript-ready table outputs and illustrative model-based predictions
 
+### Sensitivity analyses
+
+Sensitivity analyses were performed by rerunning the primary regression workflow under alternate cohort and model specifications, including:
+- use of the Schnider PK model
+- unadjusted models without BMI, sex, or ASA covariates
+- inclusion of the administratively masked 90+ cohort
+- inclusion of broader dosing records and cases with missing documented dose values coded as 0 mg
+- adjustment for co-administered induction medications
+
+These analyses use the same core regression framework as the primary Eleveld workflow, with modified input datasets or model terms.
+
 ## Repository structure
 
 This repository is organized to mirror the major stages of the analysis:
