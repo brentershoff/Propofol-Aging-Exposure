@@ -63,6 +63,19 @@ Reconstructs modeled propofol effect-site concentration trajectories from the cl
 - repeats the workflow using the Schnider model as a sensitivity analysis
 - exports model-specific analytic datasets for downstream regression, figure generation, and manuscript analysis
 
+### 04_analyze_eleveld_outputs.ipynb
+
+Performs the primary regression and figure-generation workflow using the patient-level Eleveld simulation output dataset. This notebook:
+
+- loads the Eleveld-based patient-level peak exposure dataset
+- applies the analytic exclusions and cohort restrictions used in the primary manuscript analysis
+- defines the age-adjusted Eleveld pharmacodynamic reference function
+- fits spline-based regression models for weight-normalized dose and modeled peak effect-site concentration
+- generates standardized adjusted predictions across age
+- produces the main multidimensional age-exposure figure
+- fits logistic models for overexposure probability analyses
+- generates manuscript-ready table outputs and illustrative model-based predictions
+
 ## Repository structure
 
 This repository is organized to mirror the major stages of the analysis:
@@ -73,15 +86,7 @@ This repository is organized to mirror the major stages of the analysis:
 4. sensitivity analyses using alternate PK models and alternate cohort specifications
 5. generation of manuscript figures and tables
 
-## Planned workflow
 
-Additional notebooks in this repository will include:
-
-- primary pharmacokinetic reconstruction using the Eleveld model
-- sensitivity analyses, including alternate PK models and medication-adjusted models
-- generation of main manuscript figures
-- generation of main manuscript tables
-- generation of supplementary figures and tables
 
 ## Main output files
 
