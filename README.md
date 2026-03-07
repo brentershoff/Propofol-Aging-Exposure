@@ -50,6 +50,19 @@ Generates the manuscript Table 1 age-stratified baseline summary table. This not
 - formats manuscript-ready summary values
 - exports LaTeX output for direct inclusion in Overleaf
 
+### 03_simulate_propofol_ce_models.ipynb
+
+Reconstructs modeled propofol effect-site concentration trajectories from the cleaned induction medication dataset. This notebook:
+
+- loads the cleaned analysis-ready propofol induction dataset
+- preprocesses timestamps and case-level variables for simulation
+- defines helper functions for dosing weight and model inputs
+- runs the primary Eleveld-based PK/PD simulation workflow
+- computes peak modeled effect-site concentration for each case
+- merges model outputs back into the patient-level analytic dataset
+- repeats the workflow using the Schnider model as a sensitivity analysis
+- exports model-specific analytic datasets for downstream regression, figure generation, and manuscript analysis
+
 ## Planned workflow
 
 Additional notebooks in this repository will include:
