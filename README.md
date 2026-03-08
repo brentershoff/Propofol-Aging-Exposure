@@ -8,6 +8,10 @@ This repository contains the analytic workflow used to assemble a retrospective 
 
 The workflow was developed for a study evaluating the relationship between clinician-administered propofol dose, modeled peak brain exposure, and age-adjusted pharmacodynamic requirement.
 
+## Environment
+
+Core Python dependencies are listed in `requirements.txt`.
+
 ## Repository structure
 
 This repository is organized to mirror the major stages of the analysis:
