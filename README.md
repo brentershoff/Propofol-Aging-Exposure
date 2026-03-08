@@ -76,16 +76,19 @@ Performs the primary regression and figure-generation workflow using the patient
 - fits logistic models for overexposure probability analyses
 - generates manuscript-ready table outputs and illustrative model-based predictions
 
-### Sensitivity analyses
 
-Sensitivity analyses were performed by rerunning the primary regression workflow under alternate cohort and model specifications, including:
-- use of the Schnider PK model
-- unadjusted models without BMI, sex, or ASA covariates
-- inclusion of the administratively masked 90+ cohort
-- inclusion of broader dosing records and cases with missing documented dose values coded as 0 mg
-- adjustment for co-administered induction medications
+### 05_sensitivity_analyses.ipynb
 
-These analyses use the same core regression framework as the primary Eleveld workflow, with modified input datasets or model terms.
+Runs the supplementary sensitivity analyses used to evaluate robustness of the primary findings. This notebook:
+
+- loads the appropriate patient-level simulation dataset for each sensitivity analysis section
+- reproduces the analysis using the Schnider pharmacokinetic model
+- extends the cohort to include the administratively masked 90+ age group
+- reruns the primary models without adjustment for BMI, sex, or ASA physical status
+- reruns the workflow using a broader-input cohort with relaxed preprocessing assumptions
+- reruns the models with adjustment for co-administered induction medications, including fentanyl, ketamine, midazolam, and etomidate
+- exports supplementary sensitivity-analysis figures and age-stratified tables
+- combines individual sensitivity-analysis tables into a master supplementary table
 
 ## Repository structure
 
