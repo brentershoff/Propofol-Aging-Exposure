@@ -1,7 +1,3 @@
-# Propofol-Aging-Exposure
-Retrospective PK/PD reconstruction of propofol effect-site concentration during anesthetic induction
-
-
 # Propofol Age-Exposure Reconstruction
 
 Code for retrospective reconstruction of propofol effect-site exposure during anesthetic induction across the adult lifespan.
@@ -90,17 +86,6 @@ Runs the supplementary sensitivity analyses used to evaluate robustness of the p
 - exports supplementary sensitivity-analysis figures and age-stratified tables
 - combines individual sensitivity-analysis tables into a master supplementary table
 
-## Repository structure
-
-This repository is organized to mirror the major stages of the analysis:
-
-1. dataset extraction and assembly from the perioperative SQL warehouse
-2. pharmacokinetic simulation of propofol effect-site concentration trajectories
-3. primary Eleveld-based regression and figure generation
-4. sensitivity analyses using alternate PK models and alternate cohort specifications
-5. generation of manuscript figures and tables
-
-
 
 ## Main output files
 
@@ -116,7 +101,7 @@ This public repository contains cleaned analytic code corresponding to the manus
 - Sensitivity analyses later repeat the workflow using broader inclusion criteria.
 - Final manuscript analyses using adjusted body weight (ABW) are implemented in a later preprocessing/modeling notebook rather than in the extraction notebook.
 
-## Citation and archived release
+## Code availability and citation
 
 A versioned archived release corresponding to the manuscript submission will be added here.
 
